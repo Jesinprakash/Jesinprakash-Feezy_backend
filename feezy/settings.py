@@ -94,7 +94,7 @@ import dj_database_url
 
 DATABASES = {
     'default': dj_database_url.parse(
-        'postgresql://feezy_q6ou_user:ErflP6qtO8b4y56KX2hZYSod8RLKYEb3@dpg-d77q2l95pdvs739eih70-a.virginia-postgres.render.com/feezy_q6ou'
+        'postgresql://postgres:RtHZLUIQIQJhyEqwKcyTjWRhDtqToJES@ballast.proxy.rlwy.net:41768/railway'
     )
 }
 
