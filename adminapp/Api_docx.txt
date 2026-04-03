@@ -1,0 +1,65 @@
+*)API for creating category
+url:http://127.0.0.1:8000/feezy/category/
+methode:post
+body:name
+
+
+
+
+*)API for creating Client
+url:http://127.0.0.1:8000/feezy/user/
+methode:POST
+body:{
+    username,email,business_name,
+    contact_number,address,payment_method,category}
+
+
+
+*)API for creating Token
+url:http://127.0.0.1:8000/feezy/token/
+methode:POST
+body:username,password
+
+
+
+
+*)API for forgot password
+url:http://127.0.0.1:8000/feezy/forgot-password/
+methode:POST
+body:email
+
+
+
+
+*)API for update-password
+url:http://127.0.0.1:8000/feezy/update-password/
+methode:DELETE
+body:NILL
+
+
+
+*)API for getting the detail for a particular client
+url:http://127.0.0.1:8000/feezy/client/{id}/
+methode:GET
+body:NILL
+
+
+
+*)API for update a client
+url:http://127.0.0.1:8000/feezy/client/{id}/
+methode:PUT
+body:username,email,business_name,contact_number,address,payment_method,category
+
+
+*)API for Delete a client
+url:http://127.0.0.1:8000/feezy/client/{id}/
+methode:DELETE
+body:NILL
+
+
+*)API for a client subscription renewal
+url:http://127.0.0.1:8000/feezy/clients/{id}/renew/
+methode:DELETE
+body:NILL
+
+

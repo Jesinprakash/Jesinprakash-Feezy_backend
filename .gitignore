@@ -1,0 +1,14 @@
+# local db
+db.sqlite3
+
+# Logs
+*.log
+
+# Environment variables
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+
