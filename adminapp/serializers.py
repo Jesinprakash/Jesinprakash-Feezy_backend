@@ -12,7 +12,7 @@ from django.contrib.auth import get_user_model
 from dateutil.relativedelta import relativedelta
 from decimal import Decimal
 from adminapp.config import IS_TESTING
-
+from adminapp.utils import send_email_async
 
 
 
@@ -104,8 +104,7 @@ class ClientCreateSerializer(serializers.ModelSerializer):
             f"Please change your password after your first login.\n\n"
             f"Regards,\nAdmin Team"
         )
-        send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [client.email], fail_silently=False)
-
+        send_email_async(subject, message, [client.email])
         return client
 
     def to_representation(self, instance):
