@@ -14,7 +14,7 @@ class Category(models.Model):
 
 class Client(AbstractUser):
     business_name = models.CharField(max_length=200, null=True, blank=True, unique=True)
-    contact_number = models.PositiveIntegerField(null=True, blank=True, unique=True)
+    contact_number = models.CharField(max_length=15, null=True, blank=True, unique=True)
     email = models.EmailField(unique=True, null=True, blank=True)  # ✅ unique email field
     address = models.CharField(max_length=255, null=True, blank=True)
     payment_method = models.CharField(
